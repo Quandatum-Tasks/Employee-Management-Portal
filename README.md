@@ -96,3 +96,41 @@ npm start
 
 Frontend Runs At:
 http://localhost:3000/
+
+
+## API Endpoints
+
+### Base URL (Local):
+
+http://127.0.0.1:8000/api/
+
+### Authentication & Users
+```python
+Method    Endpoint        Full URL                                           Description                   Body
+GET       /message/       http://127.0.0.1:8000/api/message/                 Welcome message               —
+POST      /register/      http://127.0.0.1:8000/api/register/                Register a new user           { name, email, password }
+POST      /login/         http://127.0.0.1:8000/api/login/                   Login user                    { email, password }
+GET       /users/         http://127.0.0.1:8000/api/users/                   Get all registered users      —
+```
+
+### Employee Management
+```python
+Method    Endpoint              Full URL                                            Description                       Body
+GET       /employees/           http://127.0.0.1:8000/api/employees/                Get all employees (latest first)  —
+POST      /employees/           http://127.0.0.1:8000/api/employees/                Add a new employee                Employee JSON data
+PUT       /employees/<id>/      http://127.0.0.1:8000/api/employees/1/              Update employee by ID             Partial or full employee data
+DELETE    /employees/<id>/      http://127.0.0.1:8000/api/employees/1/              Delete employee by ID             —
+
+```
+
+### Sample Employee JSON
+```python
+{
+  "name": "AAA",
+  "email": "AAA@example.com",
+  "role": "Software Engineer",
+  "salary": 60000,
+  "joining_date": "2025-11-08",
+  "status": "Active"
+}
+```
