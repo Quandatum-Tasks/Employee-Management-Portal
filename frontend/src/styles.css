@@ -1,0 +1,236 @@
+/* Global Background */
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  background: linear-gradient(135deg, #7f5cff, #23a6d5, #23d5ab);
+  background-size: 300% 300%;
+  animation: gradientBG 8s ease infinite;
+  margin: 0;
+  padding: 0;
+}
+
+/* Smooth animated gradient */
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Main container card with glassmorphism */
+.main-card {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 15px;
+  padding: 25px;
+  width: 90%;
+  max-width: 850px;
+  margin: 30px auto;
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: #fff;
+}
+
+/* Headings */
+h1, h2, h3 {
+  margin-bottom: 15px;
+  font-weight: 600;
+  color: #fff;
+  text-shadow: 0px 1px 2px rgba(0,0,0,0.3);
+}
+
+/* Input & Select */
+input, select {
+  width: 100%;
+  padding: 12px;
+  font-size: 15px;
+  margin-top: 8px;
+  background: rgba(255, 255, 255, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 8px;
+  outline: none;
+  color: #fff;
+}
+
+input::placeholder {
+  color: #eee;
+}
+
+/* Button Styling */
+button {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  border: none;
+  padding: 12px 20px;
+  color: white;
+  font-size: 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+  opacity: 0.95;
+}
+
+/* Logout Button */
+/* Logout Button - Fixed top-right position */
+.logout-btn {
+  position: fixed;      /* Fix it relative to viewport */
+  top: 20px;            /* Distance from top */
+  right: 20px;          /* Distance from right */
+  z-index: 1000;        /* Stay above other content */
+  background: linear-gradient(135deg, #ff416c, #ff4b2b);
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.logout-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+  opacity: 0.95;
+}
+.add-btn {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.add-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.3);
+  opacity: 0.95;
+}
+
+/* Top Bar */
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+/* Table with Glassmorphism */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  overflow: hidden;
+  color: #fff;
+}
+
+th, td {
+  padding: 12px;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+th {
+  background: rgba(255, 255, 255, 0.25);
+  font-weight: 600;
+  text-align: left;
+}
+
+tr:hover {
+  background: rgba(255, 255, 255, 0.25);
+  transition: 0.3s ease;
+}
+
+a {
+  color: #d9f1ff;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+a:hover {
+  color: #fff;
+  font-weight: 500;
+}
+/* ===== LOGIN & REGISTER PAGE STYLING ===== */
+
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+}
+
+.auth-card {
+  background: rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  padding: 35px 40px;
+  width: 90%;
+  max-width: 420px;
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #fff;
+  text-align: center;
+  animation: fadeIn 0.7s ease-in-out;
+}
+
+.auth-card h2 {
+  font-size: 28px;
+  margin-bottom: 25px;
+  font-weight: 600;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+
+.auth-card form {
+  width: 100%;
+}
+
+.auth-card input {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+.auth-card button {
+  width: 100%;
+  margin-top: 10px;
+  padding: 12px;
+}
+
+.auth-link {
+  margin-top: 18px;
+  font-size: 14px;
+  color: #e6f7ff;
+}
+
+.auth-link span {
+  color: #fff;
+  cursor: pointer;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.auth-link span:hover {
+  color: #d3efff;
+}
+
+/* Smooth fade animation */
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(-12px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
