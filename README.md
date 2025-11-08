@@ -24,11 +24,13 @@ React Frontend + Django API + MySQL DB
 
 ### Setup Instructions
 ### 1. Clone Repository
-Create a folder → mkdir Employee Portal
+Create a folder → mkdir folder name
+
+cd folder name
 
 git clone https://github.com/Quandatum-Tasks/Employee-Management-Portal.git
 
-cd Employee-Management-System
+cd Employee-Management-Portal
 
 ### Backend Setup (Django)
 
